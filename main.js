@@ -23,26 +23,26 @@ const imageData = [
     {
       image: "img/5.webp",
       title: "Marvel's Avengers",
-      text: "Marvel's Avengers is an epic, third-person, action-adventure game that combines an original, cinematic story with single-player and co-operative gameplay.',
+      text: "Marvel's Avengers is an epic, third-person, action-adventure game that combines an original, cinematic story with single-player and co-operative gameplay.",
     },
 ];
-  
+
 // const for the <div> with class .imgList
 const imgListDom = document.querySelector('.imgList');
 // const for empty content
 let carouselContent = "";
 
 // now the cycle for the img <div>
-for (let i = 0; i < imgArray.length; i++ ) {
-    newImgBox = `<div class="imgBox"><img class="image" src="${imgArray[i]}"></div>`;
- //change the img[i]
+for (let i = 0; i < imageData.length; i++ ) {
+    newImgBox = `<div class="imgBox"><img class="image" src="${imageData[i].image}"><div class="resume"><h4 class="title">${imageData[i].title}</h4><p class="description">${imageData[i].text}</p></div></div>`;
+    //change the img[i]
     carouselContent += newImgBox;
 };
 // set the img inside the <div class="imgList"> 
 imgListDom.innerHTML = carouselContent;
+
 // const for the <div class="imgBox">
 const imgBoxDom = document.getElementsByClassName('imgBox');
-//
 
 // Create HTML elements for the miniature
 // create the array list
@@ -54,12 +54,11 @@ let MiniatureContent = "";
 // now the cycle for the img <div>
 for (let i = 0; i < imgMiniatureArray.length; i++ ) {
     newMinBox = `<div class="miniatureBox"><img src="${imgMiniatureArray[i]}" alt=""></div>`;
- //change the img[i]
- MiniatureContent += newMinBox;
+    //change the img[i]
+    MiniatureContent += newMinBox;
 };
 // set the img inside the <div class="min-content"> 
 imgMiniatureDom.innerHTML = MiniatureContent;
-//
 
 // button function part
 // do add show class to the img
