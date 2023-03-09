@@ -53,7 +53,7 @@ const imgMiniatureDom = document.querySelector('.min-content');
 let MiniatureContent = "";
 // now the cycle for the img <div>
 for (let i = 0; i < imgMiniatureArray.length; i++ ) {
-    newMinBox = `<div class="miniatureBox"><img src="${imgMiniatureArray[i]}" alt=""></div>`;
+    newMinBox = `<div class="miniatureShadow lay-hover"></div><div class="miniatureBox"><img src="${imgMiniatureArray[i]}" alt=""></div>`;
     //change the img[i]
     MiniatureContent += newMinBox;
 };

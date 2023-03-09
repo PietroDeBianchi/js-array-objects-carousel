@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url(https://i.pinimg.com/originals/94/8e/ec/948eec7a19c083b16b9e664c42beac23.jpg);
+    background-image: url(https://cdn.wallpapersafari.com/26/97/KZ03eG.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,7 @@ body {
 
 .carousel {
     height: 70vh;
-    margin: 10vh 0;
+    margin: 5vh 0;
     display: flex;
     justify-content: center;
     border: 1px solid black;
@@ -29,6 +29,13 @@ body {
 
 .imgList, .imgBox, .miniatures {
     height: 100%;
+}
+
+/* title style */
+h1 {
+    color: white;
+    text-align: center;
+    padding-top: 10vh;
 }
 
 /* images style */
@@ -101,6 +108,7 @@ body {
 }
 
 .min-content {
+    position: relative;
     display: flex;
     flex-direction: column-reverse;
 }
@@ -112,6 +120,14 @@ body {
     display: block;
 }
 
-.border {
-    border: 1px solid red;
+.miniatureShadow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.lay-hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
