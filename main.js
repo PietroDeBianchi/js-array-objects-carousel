@@ -79,9 +79,8 @@ function() {
         presentImg = 0;
     }
     imgBoxDom[presentImg].classList.add('show');
+});
 
-}
-);
 
 // new code for the infite loop
 prevDom.addEventListener ('click',
